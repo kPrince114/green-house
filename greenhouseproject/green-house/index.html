@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>nav</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      /* background-color: white; */
+    }
+
+    .nav {
+      width: 100%;
+      height: 90px;
+      border: 0px solid white;
+      display: flex;
+      justify-content: space-between;
+      position: sticky;
+      top: 0px;
+      background-color: #FFFFFF;
+
+    }
+
+    .nav>div {
+      width: 50%;
+      height: 90px;
+      border: 0px solid blue;
+    }
+
+    #img {
+      width: 10%;
+      height: 35%;
+      /* display: inline-block; */
+      margin-top: 20px;
+      /* border: 1px solid red; */
+      margin-left: 15px;
+    }
+
+    #first>a {
+      margin-left: 25px;
+      margin-right: 12px;
+      text-decoration: none;
+      color: #15372c;
+      font-size: 17px;
+    }
+
+    #second>button:nth-child(1) {
+      margin-left: 40%;
+      margin-top: 18px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      border: 0.5px solid green;
+      background-color: white;
+      color: green;
+    }
+
+    #second>button:nth-child(2) {
+      margin-left: 20px;
+      padding: 12px 30px;
+      border-radius: 40px;
+      background-color: #3574d6;
+      color: white;
+      font-size: 15px;
+      border: 0px;
+    }
+
+    #navdown {
+      width: 99.85%;
+      min-height: 2490px;
+      border: 1px solid white;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, 830px);
+    }
+
+    #navdown>div {
+      border: 1px solid white;
+    }
+
+    .ptag {
+      margin-top: 80px;
+      margin-left: 110px;
+      color: #008561;
+    }
+
+    .ptag+h2 {
+      font-size: 70px;
+      font-family: "untitled serif", Georgia serif;
+      /* margin: 30px; */
+      margin-left: 120px;
+      margin-top: 30px;
+      color: #15372c;
+    }
+
+    .ptag2 {
+      color: #15372c;
+      text-align: center;
+      font-size: 16px;
+      font-family: sans-serif;
+      margin-right: 110px;
+      margin-left: 100px;
+      line-height: 30px;
+      margin-top: -20px;
+    }
+
+    .ptag2+button {
+      margin-left: 110px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background-color: #008561;
+      border: 0px;
+      color: white;
+      font-size: 90%;
+    }
+
+    #navdown>div:nth-child(2)>img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #navdown>div:nth-child(3)>img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #navdown>div:nth-child(4)>p:nth-child(1) {
+      font-size: 46px;
+      font-family: "untitled serif", Georgia serif;
+      /* margin: 30px; */
+      margin-left: 90px;
+      margin-top: 190px;
+      color: #15372c;
+      margin-right: 120px;
+    }
+
+    #navdown>div:nth-child(4)>p:nth-child(2) {
+      margin-left: 90px;
+      margin-right: 120px;
+      font-size: 18px;
+      color: #15372c;
+    }
+
+    #navdown>div:nth-child(4)>button {
+      margin-left: 110px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background-color: #008561;
+      border: 0px;
+      color: white;
+      font-size: 90%;
+    }
+
+    #navdown>div:nth-child(5)>img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #navdown>div:nth-child(6)>p {
+      font-size: 46px;
+      font-family: "untitled serif", Georgia serif;
+      /* margin: 30px; */
+      margin-left: 90px;
+      margin-top: 60px;
+      color: #15372c;
+      margin-right: 120px;
+    }
+
+    #navdown>div:nth-child(6)>button {
+      display: block;
+      padding: 20px 22px 22px;
+      font-size: 14px;
+      border: 0px;
+      border-bottom: 1px solid #15372c;
+      margin-left: 80px;
+    }
+
+    #navdown>div:nth-child(6)>button:last-child {
+      margin-left: 70px;
+      margin-top: 100px;
+      padding: 15px 30px;
+      border-radius: 30px;
+      background-color: #008561;
+      border: 0px;
+      color: white;
+      font-size: 90%;
+    }
+
+    #navdown2 {
+      height: 450px;
+      display: flex;
+      width: 100%;
+    }
+
+    #navdown2>div:nth-child(1) {
+      width: 50%;
+      height: 450px;
+    }
+
+    #navdown2>div:nth-child(2) {
+      width: 50%;
+      height: 450px;
+    }
+
+    #navdown2>div:nth-child(1)>p:first-child {
+      font-size: 46px;
+      font-family: "untitled serif", Georgia serif;
+      /* margin: 30px; */
+      margin-left: 120px;
+      margin-top: 90px;
+      color: #15372c;
+      margin-right: 120px;
+    }
+
+
+
+    #navdown2>div:nth-child(1)>p:nth-child(2) {
+      margin-left: 90px;
+      margin-right: 120px;
+      font-size: 18px;
+      color: #15372c;
+    }
+
+    #navdown2>div:nth-child(1)>button {
+      margin-left: 110px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background-color: #008561;
+      border: 0px;
+      color: white;
+      font-size: 90%;
+    }
+
+    #navdown2>div:nth-child(2)>img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #navdown3 {
+      width: 100%;
+      height: 800px;
+      display: flex;
+    }
+
+    #navdown3>div:nth-child(1) {
+      width: 50%;
+      height: 800px;
+    }
+
+    #navdown3>div:nth-child(1)>div:nth-child(1) {
+      height: 43%;
+      border: 1px solid #15372c;
+      background-color: #15372c;
+    }
+
+    #navdown3>div:nth-child(1)>div:nth-child(1)>p:nth-child(1) {
+      margin-top: 60px;
+      margin-left: 118px;
+      color: #4cb398;
+
+    }
+
+    #navdown3>div:nth-child(1)>div:nth-child(1)>p:nth-child(2) {
+      font-size: 46px;
+      font-family: "untitled serif", Georgia serif;
+      margin-top: -1px;
+      margin-left: 120px;
+      color: white;
+      margin-right: 80px;
+    }
+
+    #navdown3>div:nth-child(1)>div:nth-child(2) {
+      width: 100%;
+      height: 53%;
+    }
+
+    #navdown3>div:nth-child(1)>div:nth-child(2)>img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #navdown3>div:nth-child(2) {
+      width: 50%;
+      height: 800px;
+      border: 1px solid white;
+    }
+
+    .navdown3p1 {
+      margin-top: 70px;
+      margin-left: 100px;
+      color: #008561;
+    }
+
+    .navdown3p2 {
+      font-size: 34px;
+      font-family: "untitled serif", Georgia serif;
+      /* margin: 30px; */
+      margin-left: 100px;
+      margin-top: 10px;
+      color: #15372c;
+      margin-right: 120px;
+    }
+
+    .navdown3p3 {
+      margin-top: 10px;
+      margin-left: 100px;
+      margin-right: 120px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: rgb(102, 99, 99);
+    }
+
+    .line {
+      width: 53%;
+      height: 1.2px;
+      /* background: #008561; */
+      background: #96c7bc;
+      margin-left: 15%;
+      margin-top: 70px;
+    }
+
+    .butall {
+      margin-left: 110px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background-color: #008561;
+      border: 0px;
+      color: white;
+      font-size: 90%;
+    }
+
+    #navdown4 {
+      width: 100%;
+      height: 500px;
+      margin-top: 0.8px;
+      display: flex;
+      background-color: #113228;
+    }
+
+    #navdown4>div:nth-child(1) {
+      width: 50%;
+      height: 500px;
+    }
+
+    #navdown4>div:nth-child(1)>p {
+      font-size: 70px;
+      font-family: "untitled serif", Georgia serif;
+      /* margin: 30px; */
+      margin-left: 100px;
+      margin-top: 100px;
+      color: white;
+      margin-right: 40px;
+
+    }
+
+    #navdown4>div:nth-child(2) {
+      width: 50%;
+      height: 500px;
+    }
+
+    #navdown4>div:nth-child(2)>img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #about {
+      background-color: #15372c;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      min-height: 650px;
+      display: flex;
+    }
+
+    #about>div:nth-child(1) {
+      margin-left: 90px;
+      width: 18%;
+      height: 600px;
+      /* min-height: 500px; */
+      border: 0px solid red;
+    }
+
+    .abouth2 {
+      margin-top: 50px;
+      color: #4cb398;
+      font-size: 17px;
+    }
+
+    .aboutp {
+      margin-top: -3px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    #about>div:nth-child(2) {
+      margin-left: 25px;
+      width: 18%;
+      height: 600px;
+      border: 0px solid red;
+    }
+
+    #about>div:nth-child(3) {
+      margin-left: 5px;
+      width: 18%;
+      height: 600px;
+      border: 0px solid red;
+    }
+
+    #about>div:nth-child(4) {
+      margin-left: 20px;
+      width: 35%;
+      height: 600px;
+      border: 0px solid red;
+    }
+
+    #about>div:nth-child(4)>p:nth-child(1) {
+      margin-top: 50px;
+      margin-left: 40px;
+      color: white;
+    }
+
+    #about>div:nth-child(4)>p:nth-child(2) {
+      /* margin-top: 50px; */
+      color: white;
+      margin-left: 40px;
+      margin-right: 180px;
+    }
+
+    label {
+      display: block;
+      color: white;
+      margin-left: 40px;
+      margin-top: 60px;
+    }
+
+    #aboutinput {
+      padding: 15px 45px;
+      margin-left: 40px;
+      border-radius: 15px;
+      border: 0px;
+      margin-top: 10px;
+    }
+
+    #about>div:nth-child(4)>button {
+      padding: 15px 40px;
+      margin-left: 40px;
+      border-radius: 14px;
+      border: 1px solid white;
+      margin-top: 20px;
+      background-color: #15372c;
+      font-size: 15px;
+      color: white;
+    }
+
+    #aboutfour {
+      color: white;
+      margin-left: 45px;
+      margin-top: 100px;
+    }
+
+    #aboutselect {
+      padding: 15px 180px 15px 0px;
+      margin-left: 40px;
+      border-radius: 14px;
+      border: 1px solid white;
+      margin-top: 20px;
+      background-color: #15372c;
+      font-size: 15px;
+      color: white;
+      margin-top: -4px;
+    }
+
+    #aboutimg {
+      width: 100%;
+      height: 40px;
+      border: 0px solid;
+      /* margin-left: 86px; */
+      background-color: #15372c;
+    }
+
+    #aboutend {
+      background-color: #15372c;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      height: 60px;
+      border: 0px solid;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #aboutend>div:nth-child(1) {
+      /* margin-right: 410px; */
+      border: 0px solid;
+    }
+
+    #aboutend>div:nth-child(1)>p {
+      font-size: 12px;
+      color: white;
+      margin-left: 80px;
+    }
+
+    #aboutend>div:nth-child(2)>a {
+      color: white;
+      font-size: 12px;
+      margin-right: 70px;
+      padding-top: 100px;
+    }
+
+    #aboutimg>a>i {
+      font-size: 30px;
+      margin-left: 10px;
+      margin-top: 5px;
+      /* background-color: #15372c; */
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Dont make any changes here -->
+  <div class="nav">
+    <div id="first">
+      <img id="img" src="https://www.freelogovectors.net/svg08/greenhouse-logo.svg" alt="">
+      <a href="">Products & solutions</a>
+      <a href="">Resources</a>
+      <a href="">About us</a>
+      <a href="">Community</a>
+    </div>
+    <div id="second">
+
+      <button onclick="signup()">sign up</button>
+      <button onclick="request()">Request a demo</button>
+      <i style="margin-left: 20px; font-size: 22px ; " class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
+  <div id="navdown">
+    <div>
+      <p class="ptag">Introducing Sourcing Automation</p>
+      <h2>An efficient, personalized way to engage with talent</h2>
+      <p class="ptag2">Sourcing Automation helps you find, reach and engage top talent quickly and effectively. Easily
+        capture your
+        prospects' contact information, personalize and scale your outreach and automate communication--all with
+        Greenhouse.</p>
+      <button>See how it works</button>
+    </div>
+    <div>
+      <img
+        src="https://sharp.services.greenhouse.io/production/Greenhouse-homepage-sourcing-automation-product-image.png?auto=format&fit=max&lossless=true&q=90&w=1440&s=7754fb1603c84e31364b61f5f19ee99fb18b12d2ec5fe3c3ede07d566b8a438c"
+        alt="">
+    </div>
+    <div>
+      <img
+        src="https://sharp.services.greenhouse.io/production/Example-courses-from-Learn-Greenhouse-3.png?auto=format&fit=max&lossless=true&q=90&w=1440&s=4b38236433fd0ec2ec499990c68c8d389bada59b72deee4aa999aa0feb207445"
+        alt="">
+    </div>
+    <div>
+      <p>Learning Greenhouse is easier than ever</p>
+      <p>Train your team on Greenhouse and explore recruiting best practices with on-demand videos and courses. This
+        resource library also highlights core workflow paths for recruiters, coordinators, hiring managers and
+        interviewers.</p>
+      <button>Start Learning</button>
+    </div>
+    <div>
+      <img
+        src="https://sharp.services.greenhouse.io/production/Greenhouse-Onboarding-feedback-results.png?auto=format&fit=max&lossless=true&q=90&w=1440&s=69579a5baea45f2ed14696fba5208bf946a9006269c549d87a70a7a6cdfe0a59"
+        alt="">
+    </div>
+    <div>
+      <p>Set new hires up for success with Greenhouse Onboarding</p>
+      <button>Integrate new hires into the team more quickly</button>
+      <button><i class="fa-solid fa-list-check"></i> Design personal welcome experiences</button>
+      <button>Apply consistent and fair processes</button>
+      <button>Keep everything moving forward with automated tasks</button>
+      <button>Build a foundation for constant improvement</button>
+      <button>about Onboarding</button>
+    </div>
+  </div>
+  <div id="navdown2">
+    <div>
+      <p>Is your hiring strategy ready for what’s next?</p>
+      <p>Learn more about Greenhouse Hiring Maturity and find out if your company is moving up the curve.</p>
+      <button>Find Out</button>
+    </div>
+    <div>
+      <img
+        src="https://sharp.services.greenhouse.io/production/A-man-smiling-in-a-group-of-coworkers-around-a-table.jpg?auto=format&fit=max&lossless=true&q=90&w=1440&s=a10dbb7e30cce9f6d5e2fa24078571559045d74d31386c76bce863990ceb7c90"
+        alt="">
+    </div>
+  </div>
+  <div id="navdown3">
+    <div>
+      <div>
+        <p>Hiring Maturity, Talent strategy</p>
+        <p>How to own every moment of your hiring experience</p>
+      </div>
+      <div>
+        <img
+          src="https://sharp.services.greenhouse.io/production/Greenhouse-Hiring-Maturity-curve-resources.png?auto=format&fit=max&lossless=true&q=90&w=1440&s=41830eb37e801095dd850cb48a00d12884be11f144e9f4d665db4a392cb9a401"
+          alt="">
+      </div>
+    </div>
+    <div>
+      <p class="navdown3p1">Candidate sourcing, Hiring Maturity</p>
+      <p class="navdown3p2">How to get better at identifying and attracting the best talent for your organization</p>
+      <p class="navdown3p3">Climbing the Greenhouse Hiring Maturity™ curve Once you’ve understood the Greenhouse Hiring…
+      </p>
+      <div class="line"></div>
+      <p class="navdown3p1" style="margin-top: 90px;">Hiring Maturity, Talent strategy</p>
+      <p class="navdown3p2">How to make confident, informed hiring decisions</p>
+      <p class="navdown3p3">Climbing the Greenhouse Hiring Maturity™ curve Once you’ve understood the Greenhouse Hiring…
+      </p>
+      <button class="butall" style="margin-top: 50px;">More Hiring Maturity</button>
+    </div>
+  </div>
+  <div id="navdown3">
+    <div>
+      <div>
+        <p>Distributed hiring & work</p>
+        <p>Distributed hiring and remote working – The essential guide</p>
+      </div>
+      <div>
+        <img style="height: 107.2%;"
+          src="https://www.businessinsider.in/thumb/msid-77596270,width-700,resizemode-4,imgsize-194567/tech/how-to/how-to-capture-a-screenshot-on-your-acer-computer-in-3-different-ways/img5f357d6cb4bb1c001df531e3.jpg"
+          alt="">
+      </div>
+    </div>
+    <div>
+      <p class="navdown3p1">Candidate sourcing, Hiring Maturity</p>
+      <p class="navdown3p2">How to get better at identifying and attracting the best talent for your organization</p>
+      <p class="navdown3p3">Climbing the Greenhouse Hiring Maturity™ curve Once you’ve understood the Greenhouse Hiring…
+      </p>
+      <div class="line"></div>
+      <p class="navdown3p1" style="margin-top: 90px;">Hiring Maturity, Talent strategy</p>
+      <p class="navdown3p2">How to make confident, informed hiring decisions</p>
+      <p class="navdown3p3">Climbing the Greenhouse Hiring Maturity™ curve Once you’ve understood the Greenhouse Hiring…
+      </p>
+      <button class="butall" style="margin-top: 50px;">More Hiring Maturity</button>
+    </div>
+  </div>
+  <div id="navdown4">
+    <div>
+      <p>Ready to become great at hiring?</p>
+      <button class="butall">Request a Demo</button>
+    </div>
+    <div>
+      <img
+        src="https://cdn.shopify.com/s/files/1/0501/1803/3603/products/branch-2022575_960_720_x668@2x.png?v=1617752740"
+        alt="">
+    </div>
+  </div>
+  <div id="about">
+    <div>
+      <h2 class="abouth2">Products</h2>
+      <p class="aboutp">Recruiting</p>
+      <p class="aboutp">Onboarding</p>
+      <p class="aboutp">Pricing</p>
+      <h2 class="abouth2">Segments</h2>
+      <p class="aboutp">Enterprise</p>
+      <p class="aboutp">Small to midsize</p>
+      <h2 class="abouth2">Solutions</h2>
+      <p class="aboutp">Integrations</p>
+      <p class="aboutp">Structured hiring</p>
+      <p class="aboutp">Talent sourcing</p>
+      <p class="aboutp">Candidate experience</p>
+      <p class="aboutp">Diversity, equity & inclusion</p>
+      <p class="aboutp">More solutions</p>
+    </div>
+    <div>
+      <h2 class="abouth2">Resources</h2>
+      <p class="aboutp">Blog</p>
+      <p class="aboutp">Guidance</p>
+      <p class="aboutp">Customer Stories</p>
+      <p class="aboutp">Hiring Glossary</p>
+      <p class="aboutp">Support <i class="fa-solid fa-square-arrow-up-right"></i></p>
+
+      <p class="aboutp">Developer Resources <i class="fa-solid fa-square-arrow-up-right"></i></p>
+      <h2 class="abouth2">Platform</h2>
+      <p class="aboutp">Ethical principles</p>
+      <p class="aboutp">Services</p>
+      <p class="aboutp">Mobiles</p>
+      <p class="aboutp">Apls</p>
+      <p class="aboutp">Security</p>
+      <p class="aboutp">GDPR </p>
+    </div>
+    <div>
+      <h2 class="abouth2">About us</h2>
+      <p class="aboutp">Mission</p>
+      <p class="aboutp">Belonging</p>
+      <p class="aboutp">Company</p>
+      <p class="aboutp">Careers</p>
+      <p class="aboutp">Press & awards</p>
+      <p class="aboutp">Contact</p>
+      <h2 class="abouth2">Community</h2>
+      <p class="aboutp">Events</p>
+      <p class="aboutp">Open</p>
+      <p class="aboutp">Talent Makers</p>
+      <p class="aboutp">Newsletter</p>
+    </div>
+    <div>
+      <p>Modern Recruiter newsletter</p>
+      <p>Our bi-weekly newsletter full of inspiration, podcasts, trends and news.</p>
+      <label for="">Email address</label>
+      <input id="aboutinput" type="email">
+      <button>Subscribe</button>
+      <p id="aboutfour">Choose your language</p>
+      <div></div>
+      <select name="" id="aboutselect">
+        <option value="">English(US)</option>
+        <option value="">English(UK)</option>
+        <option value="">Deutsch</option>
+      </select>
+    </div>
+  </div>
+  <div id="aboutimg">
+    <a href="https://www.facebook.com/greenhouse.io/"> <i class="fa-brands fa-facebook"></i></a>
+
+    <a href="https://www.linkedin.com/company/greenhouse-inc-/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://twitter.com/Greenhouse"><i class="fa-brands fa-twitter-square"></i></a>
+
+    <a href="https://www.youtube.com/channel/UCwLlhrx5lFssgTwKCHEuC8g"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <div id="aboutend">
+    <div>
+      <p>©2022 Greenhouse Software, Inc.</p>
+      <p>“Hire for what’s next” and “Greenhouse Talent Makers” are trademarks of Greenhouse Software.</p>
+    </div>
+    <div>
+      <a href="">Cookie preferences</a>
+      <a href="">
+        Privacy policy</a>
+      <a href="">Terms of service</a>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  function signup() {
+    window.location.href = "signpage.html"
+  }
+  function request() {
+    window.location.href = "Request.html"
+  }
+</script>

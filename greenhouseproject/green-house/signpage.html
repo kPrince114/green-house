@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+  ">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+  }
+
+  #main>div:nth-child(1) {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(220, 215, 215);
+    color: lightgray;
+  }
+
+  #main>div:nth-child(1)>img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  #main>div:nth-child(2) {
+    width: 50%;
+    height: 100%;
+  }
+
+  #main>div:nth-child(2)>img {
+    margin-top: 130px;
+    margin-left: 100px;
+  }
+
+  #main>div:nth-child(2)>p {
+    font-size: 80px;
+    font-family: "untitled serif", Georgia serif;
+    margin-left: 100px;
+    margin-top: 70px;
+    color: #15372c;
+    margin-right: 120px;
+  }
+
+  #email {
+    width: 47.5%;
+    margin-left: 100px;
+    padding: 15px 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: -10px;
+    font-size: 22px;
+  }
+
+  #valid {
+    width: 50%;
+    margin-left: 100px;
+    padding: 5px 20px;
+    margin-top: 2px;
+    font-size: 18px;
+    color: red;
+
+  }
+
+  #but {
+    width: 64%;
+    height: 40px;
+    margin-left: 100px;
+    border: 0px solid red;
+    display: flex;
+    margin-top: 30px;
+  }
+
+  #but>button:nth-child(1) {
+
+    padding: 12px 45px;
+    border-radius: 30px;
+    background-color: blue;
+    border: 0px;
+    color: white;
+    font-size: 90%;
+  }
+
+  #but>div {
+    margin-left: 40px;
+    width: 60px;
+    height: 100%;
+  }
+
+  #but>div>p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  #but>p {
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  #but>p+button {
+    display: inline;
+    padding: 15px 55px;
+    background-color: white;
+    border: 0.5px solid darkgray;
+    padding-left: 20px;
+
+  }
+
+  i {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  input.placeholder {
+    font-size: 20px;
+  }
+</style>
+
+
+<body>
+  <div id="main">
+    <div>
+      <img
+        src="https://sharp.services.greenhouse.io/production/Greenhouse-botanical-2.jpg?auto=format&fit=max&lossless=true&q=90&w=1440&s=9bf229bd7ef4af699ad10675926e43878776972bf9bffd8bd4efdfbecdf5eb26"
+        alt="">
+    </div>
+    <div>
+      <img
+        src="https://recruiting.cdn.greenhouse.io/assets/sessions/iconGhr-46ff84da0055c0a9c2fb059555057583cbda14599c08baf319475bc337a82543.png"
+        alt="">
+      <p>Let’s start hiring.</p>
+      <input type="email" placeholder="email" id="email">
+      <div id="valid"></div>
+      <div id="but">
+        <button onclick="clickf()">next</button>
+        <div>
+          <p>or</p>
+        </div>
+        <button onclick="clickgoo()"><i class="fa-brands fa-google"></i>
+          sign in with google</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<script>
+  function clickf() {
+    let data = document.querySelector("#email").value;
+    console.log(data)
+    console.log("data")
+    let putdata = document.querySelector("#valid").innerHTML
+    if (data == "") {
+      document.querySelector("#valid").innerHTML = "you are not put your email please put"
+      let div1 = document.querySelector("#valid")
+
+    }
+    else {
+      document.querySelector("#email").value = "";
+      let cre = document.querySelector("#email")
+      cre.setAttribute("type", "password");
+      cre.setAttribute("placeholder", "password");
+    }
+  }
+  function clickgoo() {
+
+    window.location.href = "https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=online&client_id=594601915089-rrls6ibr90n1ehrtvkfcoldipllj1r5d.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Foauth-redirector.services.greenhouse.io%2Fintegrations%2Foauth%2Fcreate&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=cbf954882b501093dd42323855835b89454258e54bfeaf74&flowName=GeneralOAuthFlow"
+  }
+
+</script>
